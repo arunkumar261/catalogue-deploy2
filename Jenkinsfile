@@ -11,8 +11,8 @@ pipeline {
     }
 
     parameters {
-        string(name: 'version', defaultValue: '1.0.0', description: 'What is the version to download artifact ?')
-        string(name: 'environment', defaultValue: 'dev', description: 'What is the environment for infra ?')
+        string(name: 'version', defaultValue: '', description: 'What is the version to download artifact ?')
+        string(name: 'environment', defaultValue: '', description: 'What is the environment for infra ?')
     }
 
     stages {
