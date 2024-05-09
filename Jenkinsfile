@@ -45,11 +45,11 @@ pipeline {
             }
         }
         stage('Apply') {
-            when {
-                expression {
-                    params.Create
-                }
-            }
+            // when {
+            //     expression {
+            //         params.Create
+            //     }
+            // }
             steps {
                 sh """
                 cd terraform
